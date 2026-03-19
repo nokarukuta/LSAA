@@ -1,7 +1,8 @@
 # On VM5
-sudo zypper install docker docker-compose docker-compose-switch
-sudo systemctl enable docker
-sudo usermod -G docker -a $USER
+sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo dnf install docker-ce
+sudo usermod -aG docker -a $USER
+sudo systemctl enable --now docker
 newgrp docker
 sudo systemctl restart docker
 mkdir html
