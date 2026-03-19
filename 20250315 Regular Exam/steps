@@ -3,8 +3,8 @@ sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo dnf install docker-ce
 sudo usermod -aG docker -a $USER
 sudo systemctl enable --now docker
-newgrp docker
-sudo systemctl restart docker
+#newgrp docker
+#sudo systemctl restart docker
 mkdir html
 echo "Linux Guru" > ~/html/index.html
 docker container run -d --name web -p 8080:80 -v ~/html:/usr/share/nginx/html hub.zahariev.pro/nginx
