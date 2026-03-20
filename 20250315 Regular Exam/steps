@@ -129,8 +129,8 @@ echo "@eminemfan on VM3" | sudo tee /usr/share/nginx/vhost-port/index.html
 # same for VM4
 
 # on VM2:
-sudo zypper install haproxy
-sudo vi /etc/haproxy/haproxy.cfg
+sudo dnf install haproxy nano
+sudo nano /etc/haproxy/haproxy.cfg
 sudo systemctl enable --now haproxy
 sudo firewall-cmd --add-port 80/tcp --permanent
 sudo firewall-cmd --reload
