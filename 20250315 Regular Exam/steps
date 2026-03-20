@@ -24,11 +24,12 @@ sudo mount /dev/md0 /storage/raidmd
 sudo blkid /dev/md0
 sudo nano /etc/fstab
 UUID=16d173ea-95a4-4220-bf92-cb35194471f8    /storage/raidmd    ext4    defaults    0 0
+
 # check with unmount md0 and mount all systems in fstab
 sudo umount /storage/raidmd
 sudo mount -av
 
-sudo zypper install targetcli
+sudo dnf -y install targetcli
 sudo mkdir /var/lib/iscsi-images
 sudo targetcli
 cd backstores/fileio
@@ -38,14 +39,14 @@ create
 cd iqn.2003-01.org.linux-iscsi.vm6.x8664:sn.a6cd2d407caf/tpg1/luns
 create /backstores/fileio/D1
 cd ../acls
-create iqn.1996-04.de.suse:01:c86ecb6e3056
+create iqn.2003-01.org.linux-iscsi.vm6.x8664:lba.init1
 exit
 sudo systemctl enable --now target
 sudo firewall-cmd --add-service iscsi-target --permanent
 sudo firewall-cmd --reload 
 
 # VM2
-sudo zypper install open-iscsi
+sudo dnf install open-iscsi
 sudo cat /etc/iscsi/initiatorname.iscsi
 sudo iscsiadm -m discovery -t sendtargets -p vm6.lsaa.lab
 sudo iscsiadm -m node --login
