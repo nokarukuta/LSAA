@@ -142,6 +142,7 @@ sudo dnf install epel-release
 sudo dnf config-manager --set-enabled crb
 sudo dnf install nagios
 sudo systemctl enable --now nagios
+#sudo systemctl enable --now httpd #maybe not needed?
 sudo firewall-cmd --add-service={http,https} --permanent
 sudo firewall-cmd --reload
 sudo htpasswd -c /etc/nagios/passwd nagiosadmin
