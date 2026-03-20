@@ -145,7 +145,8 @@ sudo systemctl enable --now nagios
 #sudo systemctl enable --now httpd #maybe not needed?
 sudo firewall-cmd --add-service={http,https} --permanent
 sudo firewall-cmd --reload
-sudo htpasswd -c /etc/nagios/passwd nagiosadmin
+sudo htpasswd /etc/nagios/passwd nagiosadmin
+#sudo htpasswd -c /etc/nagios/passwd nagiosadmin
 LSAA-Exam
 LSAA-Exam
 sudo touch /etc/nagios/objects/exam-vm{2..6}.cfg
