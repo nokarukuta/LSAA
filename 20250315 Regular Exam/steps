@@ -150,12 +150,12 @@ sudo htpasswd /etc/nagios/passwd nagiosadmin
 LSAA-Exam
 LSAA-Exam
 sudo touch /etc/nagios/objects/exam-vm{2..6}.cfg
-
+sudo nano /etc/nagios/nagios.cfg
 # add this
-cfg_file=/etc/nagios/objects/exam-str.cfg
-cfg_file=/etc/nagios/objects/exam-cnt.cfg
-cfg_file=/etc/nagios/objects/exam-lba.cfg
-cfg_file=/etc/nagios/objects/exam-wba.cfg
-cfg_file=/etc/nagios/objects/exam-wbb.cfg
+cfg_file=/etc/nagios/objects/exam-vm2.cfg
+cfg_file=/etc/nagios/objects/exam-vm3.cfg
+cfg_file=/etc/nagios/objects/exam-vm4.cfg
+cfg_file=/etc/nagios/objects/exam-vm5.cfg
+cfg_file=/etc/nagios/objects/exam-vm6.cfg
 sudo nagios -v /etc/nagios/nagios.cfg
 sudo systemctl restart nagios
