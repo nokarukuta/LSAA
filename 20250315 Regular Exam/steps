@@ -111,6 +111,7 @@ ssh-copy-id exam@vm4.lsaa.lab
 # edit /etc/ansible/ansible.cfg to add the inventory path
 [defaults]
 inventory = ~cm/hosts
+
 ansible-playbook ~/cm/exam.yaml --syntax-check
 ansible-playbook ~/cm/exam.yaml --list-hosts
 ansible-playbook ~/cm/exam.yaml
