@@ -1,6 +1,6 @@
 which port is used by rsync in server mode?
 - [ ]2049/tcp
-- [x]873/tcp
+- [X]873/tcp
 - [ ]543/tcp
 - [ ]9090/tcp
 
