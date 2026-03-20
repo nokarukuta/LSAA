@@ -138,7 +138,9 @@ sudo ss -ntpl
 curl http://localhost:8080
 
 # on VM1
-sudo zypper install nagios
+sudo dnf install epel-release
+sudo dnf config-manager --set-enabled crb
+sudo dnf install nagios
 sudo systemctl enable --now nagios
 sudo firewall-cmd --add-service={http,https} --permanent
 sudo firewall-cmd --reload
