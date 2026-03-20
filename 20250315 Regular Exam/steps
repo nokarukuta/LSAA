@@ -94,10 +94,11 @@ sudo mount -av
 # on VM4 machine - same steps
 
 # on VM2
-sudo zypper install ansible
+sudo dnf install epel-release
+sudo dnf -y install ansible
 ansible --version
 sudo mkdir -p ~/cm
-sudo vi ~/cm/hosts
+sudo nano ~/cm/hosts
 [web]
 vm3.lsaa.lab
 vm4.lsaa.lab
