@@ -117,7 +117,7 @@ ansible-playbook ~/cm/exam.yaml --list-hosts
 ansible-playbook ~/cm/exam.yaml
 
 # on VM3
-sudo vi /etc/nginx/conf.d/vhost-port.conf
+sudo nano /etc/nginx/conf.d/vhost-port.conf
 sudo mkdir /usr/share/nginx/vhost-port
 sudo nginx -t
 sudo systemctl restart nginx
@@ -125,7 +125,7 @@ sudo firewall-cmd --add-port 8080/tcp --permanent
 sudo firewall-cmd --reload
 curl http://localhost
 curl http://localhost:8080
-echo "@chebishev on VM3" | sudo tee /usr/share/nginx/vhost-port/index.html
+echo "@eminemfan on VM3" | sudo tee /usr/share/nginx/vhost-port/index.html
 # same for VM4
 
 # on VM2:
