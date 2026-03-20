@@ -3,108 +3,123 @@ which port is used by rsync in server mode?
 - [X]873/tcp
 - [ ]543/tcp
 - [ ]9090/tcp
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+which two commands can be used to send print job to a printer
+- [x]lpr
+- [ ]lpq
+- [ ]lprm
+- [x]lp
+which is not part of nagios triangle
+- [ ]host
+- [ ]command
+- [ ]service
+- [x]contact
+which is the name of the default SElinux policy
+- [ ]default
+- [x]target
+- [ ]system
+- [ ]enforcing
+which dns record is used to mark the beginning of a zone
+- [ ]SZ
+- [X]SOA
+- [ ]SA
+- [ ]Zone
+what is the role of pacemaker in linux failover clustering
+- [ ]load balancer
+- [ ]backend server
+- [ ]high availability framework
+- [X]Cluster resource manager
+which two docker commands will download an image if its not found locally
+- [X]pull
+- [ ]get
+- [ ]download
+- [X]run
+what does getsebool do
+- [ ]return state of SElinux
+- [ ]return context of file
+- [X]return state of SElinux boolean
+- [ ]return mode of SElinux
+which command is used to control magnatic tapes
+- [ ]magctl
+- [X]mt
+- [ ]mtctl
+- [ ]mtadm
+how can we check the nginx config
+- [ ]nginx --test
+- [ ]nginx test
+- [ ]nginx configtest
+- [ ]nginx -t
+which lvm component is at the lowest level
+- [ ]volume group
+- [X]physical volume
+- [ ]file system
+- [ ]logical volume
+which is **NOT** a part of the SElinux label
+- [ ]role
+- [ ]user
+- [ ]type
+- [X]group
+which are two popular mac solutions
+- [ ]securelinux
+- [X]apparmor
+- [ ]appsecurity
+- [X]SElinux
+which commands reads current ACLs for a file
+- []getacl
+- [ ]repacl
+- [X]getfacl
+- [ ]showacl
+what is the default stripe size when creating MD RAID0 array
+- [ ]64K
+- [X]512K
+- [ ]128K
+- [ ]4K
+which command can be used to check the status of a printer
+- [ ]lp
+- [X]lpq
+- [ ]lpr
+- [ ]lprm
+which two databases are supported for storing bacula catalog
+- [X]postgresql
+- [ ]mssql
+- [X]mysql
+- [ ]influxdb
+which protocol is used by keepalived
+- [ ]rip
+- [X]vrrp
+- [ ]bgp
+- [ ]ospf
+which two are part of the SElinux label
+- [ ]group
+- [X]role
+- [ ]purpose
+- [X]user
+how the status of an MD based array can be monitored
+- [ ]/etc/mdadm.conf
+- [X]/proc/mdstat
+- [ ]/proc/disk/mdstat
+- [ ]/var/log/mdstat.log
+which command can be used to create a new VM
+- [ ]vm-new
+- [ ]vmctl
+- [ ]kvmctl
+- [X]virt-install
+which two commands are included in FreeIPA suite
+- [ ]smtp server
+- [X]NTP server
+- [X]directory server
+- [ ]RDS server
+what is the role of corosync in linux clustering
+- [ ]cluster resource manager
+- [ ]backend server
+- [X]high availability framework
+- [ ]load balancer
+which command is used to get quota information
+- [X]repquota
+- [ ]quotashow
+- [ ]edquota
+- [ ]quotacheck
+select two possible ways to troubleshoot or test apache configuration
+- [ ]apachectl test
+- [X]httpd -t
+- [X]apachectl configtest
+- [ ]apeachectl --test
