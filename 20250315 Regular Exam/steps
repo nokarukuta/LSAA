@@ -101,6 +101,8 @@ ansible --version
 #you need this otherwise firewalld is missing
 ansible-galaxy collection install ansible.posix
 sudo mkdir -p ~/cm
+#switch owner cuz it was created as root
+sudo chown -R exam:exam cm
 sudo nano ~/cm/hosts
 [web]
 vm3.lsaa.lab
