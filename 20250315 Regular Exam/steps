@@ -61,7 +61,7 @@ lsblk
 sudo mkfs.xfs /dev/sdb1
 sudo mkdir -p /storage/iscsi
 sudo mount /dev/sdb1 /storage/iscsi
-blkid /dev/sdb1
+sudo blkid /dev/sdb1
 sudo nano /etc/fstab
 UUID=637ef212-223e-48e1-a5b8-cd99c78c86a5    /storage/iscsi    xfs    _netdev    0 0
 # check with unmount md0 and mount all systems in fstab
