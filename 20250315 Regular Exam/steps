@@ -144,6 +144,10 @@ curl http://localhost:80
 sudo dnf install epel-release
 sudo dnf config-manager --set-enabled crb
 sudo dnf install nagios
+#permissions broken. fix is chown
+sudo chown -Rv nagios:nagios /etc/nagios/
+sudo chown -Rv nagios:nagios /var/log/nagios/
+sudo chown -Rv nagios:nagios /var/spool/nagios/
 sudo systemctl enable --now nagios
 #sudo systemctl enable --now httpd #maybe not needed?
 sudo firewall-cmd --add-service={http,https} --permanent
