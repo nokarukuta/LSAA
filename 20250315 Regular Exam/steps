@@ -12,8 +12,8 @@ curl http://localhost:8080
 
 # On VM6
 lsblk
-sudo parted -s /dev/sdb -- mklabel msdos mkpart primary 2048s -0m set 0 raid on 
-sudo parted -s /dev/sdc -- mklabel msdos mkpart primary 2048s -0m set 0 raid on 
+sudo parted -s /dev/sdb -- mklabel msdos mkpart primary 2048s -0m set 1 raid on 
+sudo parted -s /dev/sdc -- mklabel msdos mkpart primary 2048s -0m set 1 raid on 
 sudo dnf -y install mdadm
 sudo mdadm --create /dev/md0 --level 0 --raid-devices 2 /dev/sd{b,c}1
 
