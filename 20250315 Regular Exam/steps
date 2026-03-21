@@ -135,7 +135,7 @@ sudo systemctl enable --now haproxy
 sudo firewall-cmd --add-port 80/tcp --permanent
 sudo firewall-cmd --reload
 sudo ss -ntpl
-curl http://localhost:8080
+curl http://localhost:80
 
 # on VM1
 sudo dnf install epel-release
