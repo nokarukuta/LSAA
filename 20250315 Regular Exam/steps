@@ -54,7 +54,7 @@ sudo systemctl enable --now iscsi
 sudo iscsiadm -m discovery -t sendtargets -p vm6.lsaa.lab
 sudo iscsiadm -m node --login
 lsblk
-sudo parted -s /dev/sdb/ -- mklabel msdos mkpart primary 16384s -0m 
+sudo parted -s /dev/sdb -- mklabel msdos mkpart primary 16384s -0m 
 #sudo fdisk /dev/sdb
 #o, n, p, 1, Enter, Enter, w
 lsblk
