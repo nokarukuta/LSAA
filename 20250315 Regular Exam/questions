@@ -47,7 +47,7 @@ how can we check the nginx config
 - [ ]nginx --test
 - [ ]nginx test
 - [ ]nginx configtest
-- [ ]nginx -t
+- [x]nginx -t
 which lvm component is at the lowest level
 - [ ]volume group
 - [X]physical volume
