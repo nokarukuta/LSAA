@@ -3,6 +3,7 @@ sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo dnf install docker-ce
 sudo usermod -aG docker -a $USER
 sudo systemctl enable --now docker
+docker container run -it --name greeting hub.zahariev.pro/hello-lsaa
 #newgrp docker
 #sudo systemctl restart docker
 mkdir html
