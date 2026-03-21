@@ -96,8 +96,10 @@ sudo mount -av
 
 # on VM2
 sudo dnf install epel-release
-sudo dnf -y install ansible
+sudo dnf -y install ansible-core
 ansible --version
+#you need this otherwise firewalld is missing
+ansible-galaxy collection install ansible.posix
 sudo mkdir -p ~/cm
 sudo nano ~/cm/hosts
 [web]
@@ -111,7 +113,7 @@ ssh-copy-id exam@vm3.lsaa.lab
 ssh-copy-id exam@vm4.lsaa.lab
 # edit /etc/ansible/ansible.cfg to add the inventory path
 [defaults]
-inventory = ~cm/hosts
+inventory = /home/exam/cm/hosts
 
 ansible-playbook ~/cm/exam.yaml --syntax-check
 ansible-playbook ~/cm/exam.yaml --list-hosts
